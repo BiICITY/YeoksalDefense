@@ -1,0 +1,133 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &509811265171478041
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 7ec2da54f1f5cdb478de4516dcf6753b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -9.143212
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7ec2da54f1f5cdb478de4516dcf6753b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.2321608
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7ec2da54f1f5cdb478de4516dcf6753b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.365506
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7ec2da54f1f5cdb478de4516dcf6753b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7ec2da54f1f5cdb478de4516dcf6753b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7ec2da54f1f5cdb478de4516dcf6753b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7ec2da54f1f5cdb478de4516dcf6753b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7ec2da54f1f5cdb478de4516dcf6753b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7ec2da54f1f5cdb478de4516dcf6753b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7ec2da54f1f5cdb478de4516dcf6753b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7ec2da54f1f5cdb478de4516dcf6753b, type: 3}
+      propertyPath: m_Name
+      value: BossEnemy
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 7ec2da54f1f5cdb478de4516dcf6753b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5841573257179507060}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 7ec2da54f1f5cdb478de4516dcf6753b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6588890177844279182}
+  m_SourcePrefab: {fileID: 100100000, guid: 7ec2da54f1f5cdb478de4516dcf6753b, type: 3}
+--- !u!1 &851848235223149384 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 7ec2da54f1f5cdb478de4516dcf6753b, type: 3}
+  m_PrefabInstance: {fileID: 509811265171478041}
+  m_PrefabAsset: {fileID: 0}
+--- !u!136 &5841573257179507060
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 851848235223149384}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.3
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &6588890177844279182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 851848235223149384}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2b61e6fe6ed45341aa1aeefd9d65cd4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Enemy
+  enemyVariant: 0
+  maxHP: 30
+  currentHP: 0
+  moveSpeed: 2
+  attackDamage: 5
+  attackInterval: 1
+  goldReward: 3
+  soulReward: 1
+  arriveDistance: 0.15
+  attackSideOffsetX: 0.9
+  separationRadius: 0.65
+  separationStrength: 1.6
+  barricadeTarget: {fileID: 0}
+  wallTarget: {fileID: 0}
+  altarTarget: {fileID: 0}
+  useVariantTint: 0
+  basicColor: {r: 1, g: 1, b: 1, a: 1}
+  fastColor: {r: 0, g: 1, b: 1, a: 1}
+  tankColor: {r: 1, g: 0.45, b: 0.15, a: 1}
+  basicScale: 1
+  fastScale: 0.85
+  tankScale: 1.35
+  useHitFlash: 1
+  hitFlashColor: {r: 1, g: 0, b: 0, a: 1}
+  hitFlashDuration: 0.08
+  currentTargetType: 0
+  isDead: 0
+  assignedLaneZ: 0
